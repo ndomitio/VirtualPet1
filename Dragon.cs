@@ -8,6 +8,8 @@ namespace VirtualPet1
 {
     public class Dragon
     {
+        //originally had mostly bool fields, decided to add int "ratings" later to make the program more interesting.  
+
 
         //fields 
 

@@ -13,7 +13,7 @@ namespace VirtualPet1
             int userChoice;
 
             //int tickerCount = 0;
-            Dragon INSERT = new Dragon(true, true, true, "red");
+            //Dragon INSERT = new Dragon(true, true, true, "red");
             Dragon myDragon = new Dragon("red", 50, 50, 50);
             Console.WriteLine("You are so lucky to have found a dragon!");
             Console.WriteLine("\nWhat are you going to call your dragon?");
@@ -33,8 +33,8 @@ namespace VirtualPet1
                 if (myDragon.TickerCount == 10)
                 { Console.WriteLine("\nMake sure " + myDragon.DragonName + " is rested and fed!"); }
                 if (myDragon.TickerCount == 30)
-                { Console.WriteLine(myDragon.DragonName + " has had a long day!"); }
-
+                { Console.WriteLine("\n"+ myDragon.DragonName + " has had a long day!"); }
+                 
                 myDragon.tick();
                 //Console.WriteLine("here is your count" +myDragon.TickerCount);
                 userChoice = int.Parse(Console.ReadLine());
