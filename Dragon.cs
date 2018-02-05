@@ -13,12 +13,12 @@ namespace VirtualPet1
 
         //fields 
 
-        private bool isHungry;
+        //private bool isHungry;
         private int hunger;
-        private bool canFly;
+        //private bool canFly;
         private int flightRating;
         private string color;
-        private bool canBreatheFire;
+        //private bool canBreatheFire;
         private int fireRating;
         private int tickerCount;
         private string dragonName;
@@ -55,17 +55,17 @@ namespace VirtualPet1
             get { return this.dragonName; }
             set { this.dragonName = value; }
         }
-        public bool IsHungry
-        {
-            get { return this.isHungry; }
-            set { this.isHungry = value; }
-        }
+        //public bool IsHungry
+        //{
+        //    get { return this.isHungry; }
+        //    set { this.isHungry = value; }
+        //}
 
-        public bool CanFly
-        {
-            get { return this.canFly; }
-            set { this.canFly = value; }
-        }
+        //public bool CanFly
+        //{
+        //    get { return this.canFly; }
+        //   set { this.canFly = value; }
+        //}
 
 
         public string Color
@@ -74,11 +74,11 @@ namespace VirtualPet1
             set { this.color = value; }
         }
 
-        public bool CanBreatheFire
-        {
-            get { return this.canBreatheFire; }
-            set { this.canBreatheFire = value; }
-        }
+        //public bool CanBreatheFire
+        //{
+        //    get { return this.canBreatheFire; }
+        //    set { this.canBreatheFire = value; }
+        //}
 
         //constructors 
 
@@ -95,19 +95,26 @@ namespace VirtualPet1
             this.hunger = hunger;
         }
 
-        public Dragon(string color, bool isHungry, bool canFly)
+        public Dragon(int fireRating, int hunger, string color)
         {
+            this.fireRating = fireRating;
+            this.hunger = hunger;
             this.color = color;
-            this.isHungry = isHungry;
-            this.canFly = canFly;
-        }
 
-        public Dragon(bool canBreatheFire, bool canFly, bool isHungry, string color)
-        {
-            this.canBreatheFire = canBreatheFire;
-            this.canFly = canFly;
-            this.isHungry = isHungry;
         }
+        //public Dragon(string color, bool isHungry, bool canFly)
+        //{
+        //    this.color = color;
+        //    this.isHungry = isHungry;
+        //    this.canFly = canFly;
+        //}
+
+        //public Dragon(bool canBreatheFire, bool canFly, bool isHungry, string color)
+        //{
+         //   this.canBreatheFire = canBreatheFire;
+          //  this.canFly = canFly;
+          //  this.isHungry = isHungry;
+       // }
 
         //methods
 
